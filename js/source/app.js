@@ -2,21 +2,19 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-
-var animals = [
-	{
-		species: "Cat",
-		name: "Ruth",
-		birthDate: Date.now(),
-		images: [],
-		color: "Diluted Torti"
-	}
-];
+import Animal from './components/Animal.js'
+var cat = {
+	species: "Cat",
+	name: "Ruth",
+	birthDate: "17 August 2017",
+	images: [],
+	color: "Diluted Torti"
+};
 
 const App = () => {
 	return (
 			<div>
-				Hello
+				<Animal animal={cat} />
 			</div>
 	);
 };
