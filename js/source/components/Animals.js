@@ -7,7 +7,9 @@ import Animal from "./Animal.js";
 const Animals = props => {
 	return (
 		<div className="animals">
-			{props.animals.map((animal, idx) => <Animal animal={animal} key={idx} />)}
+			{props.animals.map((animal, idx) => (
+				<Animal animal={animal} key={idx} />
+			))}
 		</div>
 	);
 };
