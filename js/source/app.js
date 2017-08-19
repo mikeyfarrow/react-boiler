@@ -3,8 +3,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-// Needed for onTouchTap
-injectTapEventPlugin();
+var animals = [
+	{
+		species: "Cat",
+		name: "Ruth",
+		birthDate: Date.now(),
+		images: [],
+		color: "Diluted Torti"
+	}
+];
 
 const App = () => {
 	return (
