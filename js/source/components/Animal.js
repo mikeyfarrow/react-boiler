@@ -5,12 +5,12 @@ import ReactDOM from "react-dom";
 
 const Animal = (props) => {
 	return (
-		<div>
+		<div className="animalCard">
 			<h1>{props.animal.species}</h1>
 			<h2>{props.animal.name}</h2>
 			<p>{props.animal.birthDate}</p>
 			<div>
-				{props.animal.images.map(url => (<img src={url} alt="kitty"/>))}
+				{props.animal.images.map((url, idx) => (<img src={url} alt="kitty" key={idx}/>))}
 			</div>
 		</div>
 	);
